@@ -1,0 +1,112 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    letter-spacing: 0.03rem;
+}
+* {
+    box-sizing: border-box;
+}
+label{
+    font-size: 20px;
+    color: #060436a8;
+    font-weight: 600;
+}
+form{
+    margin-left:24%;
+}
+input[type=text], select, textarea 
+{
+    font-size:100%;
+    width: 70%;
+    padding: 12px;
+    -webkit-box-shadow: 10px 10px 15px -15px rgba(14, 16, 36, 0.75);
+    -moz-box-shadow: 10px 10px 15px -15px rgba(14, 16, 36, 0.75);
+    box-shadow: 10px 10px 15px -18px rgba(14, 16, 36, 0.75);
+    border: 1px solid #161d2c30;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 26px;
+    font-weight: 400;
+    resize: vertical;
+    color: #060436a8;
+    letter-spacing: 0.05rem;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #dedfe4;
+    padding: 20px;
+}
+h4{
+    font-size: 34px;
+    color: rgba(91, 101, 188, 0.83);
+    text-align: center;
+}
+
+.button {
+    font-size:22px;
+    display: inline-block;
+    border-radius: 10rem;
+    color: #fff;
+    letter-spacing: 0.05rem; 
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    margin-left:27%;
+    width: 150px;
+    height: 60px;
+    z-index: 1;
+    border-color: transparent;
+    border-width: 0px;
+    -webkit-box-shadow: 10px 9px 15px -15px rgba(14, 16, 36, 0.75);
+    -moz-box-shadow: 10px 9px 15px -15px rgba(14, 16, 36, 0.75);
+    box-shadow: 10px 9px 15px -18px rgba(14, 16, 36, 0.75);
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(91, 101, 188, 0.83);
+    border-radius: 10rem;
+    border-color: transparent;
+    z-index: -2;
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-color: transparent;
+    height: 100%;
+    background-color: #d66578c4;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.button:hover {
+    color: #fff;
+}
+.button:hover:before {
+    width: 100%;
+}
+::placeholder {
+    color: rgba(88, 104, 145, 0.435);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(88, 104, 145, 0.435);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(88, 104, 145, 0.435);
+}
